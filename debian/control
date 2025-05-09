@@ -1,0 +1,20 @@
+Source: debianissimo
+Section: unknown
+Priority: optional
+Maintainer: Vinche.zsh <vinchethescript@gmail.com>
+Rules-Requires-Root: no
+Build-Depends: debhelper (>= 9)
+Standards-Version: 3.9.8
+#Homepage: <insert the upstream URL, if relevant>
+#Vcs-Browser: https://salsa.debian.org/debian/debianissimo
+#Vcs-Git: https://salsa.debian.org/debian/debianissimo.git
+
+Package: debianissimo
+Architecture: any
+Pre-Depends: base-files (>= 9.9+deb9u13+debis)
+Depends:
+ ${shlibs:Depends},
+ ${misc:Depends},
+Description: Meta-package for installing Debianissimo
+  This package is a meta-package that installs all the patches
+  for Debianissimo to work properly.
